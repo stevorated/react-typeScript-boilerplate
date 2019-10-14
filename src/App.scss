@@ -1,0 +1,12 @@
+
+@import './Costants.scss';
+
+h1.header {
+  font-size: $header;
+  font-weight: 900;
+}
+
+p.secondaryHeader {
+  font-size: $caption;
+  font-weight: 100;
+}

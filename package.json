@@ -1,0 +1,29 @@
+{
+  "name": "spa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "typescript": "^3.6.4",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.5",
+    "@types/react-dom": "^16.9.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "style-loader": "^1.0.0",
+    "url-loader": "^2.2.0",
+    "webpack-dev-server": "^3.8.2"
+  }
+}
