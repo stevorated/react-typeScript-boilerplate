@@ -1,4 +1,4 @@
-==== :stew: **React TypeScript Boilerplate** :stew: ====
+==== :stew: React TypeScript Boilerplate :stew: ====
 
 react-typeScript-boilerplate
 
@@ -6,7 +6,6 @@ includes:
 
 :+1: TypeScript
 :+1: Webpack 4
-:+1: CSS/SASS/SCSS
 :+1: Image Files
 :+1: HMR
 
