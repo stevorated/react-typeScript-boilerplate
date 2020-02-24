@@ -17,7 +17,7 @@
     "paths": {
       "components/*": [
         "src/components/*",
-        "src/index.d.ts"
+        "src/declaration.d.ts"
       ],
     }
   }
