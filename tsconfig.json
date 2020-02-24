@@ -16,7 +16,8 @@
     "baseUrl": "./",
     "paths": {
       "components/*": [
-        "src/components/*"
+        "src/components/*",
+        "src/index.d.ts"
       ],
     }
   }

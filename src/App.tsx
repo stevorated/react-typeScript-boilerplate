@@ -10,7 +10,7 @@ class App extends React.Component<PageInterface, {}> {
         <h1 className={`header text-${color} text-uppercase display-4`}>
           React-Typescript
         </h1>
-        <img className="my-5" src={require('./assets/img/cuttree.jpg')} alt="sada"/>
+        <img src="/src/assets/img/cuttree.jpg" className="my-5" alt="sada"/>
         <p className="mt-3 secondaryHeader">The color of this page is: {color}</p>
       </div>
     );
