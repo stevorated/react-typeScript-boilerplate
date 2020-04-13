@@ -1,3 +1,3 @@
-import PageInterface from './PageInterface';
+import { IPage } from './IPage';
 
-export { PageInterface };
+export { IPage };

@@ -1,24 +1,25 @@
 {
-  "compilerOptions": {
-    "sourceMap": true,
-    "noImplicitAny": false,
-    "module": "commonjs",
-    "target": "es6",
-    "lib": [
-      "es2015",
-      "es2017",
-      "dom"
-    ],
-    "removeComments": true,
-    "allowSyntheticDefaultImports": false,
-    "jsx": "react",
-    "allowJs": true,
-    "baseUrl": "./",
-    "paths": {
-      "components/*": [
-        "src/components/*",
-        "src/declaration.d.ts"
-      ],
-    }
-  }
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "lib": ["dom", "es2017", "es2015"],
+        "allowJs": false,
+        "jsx": "react",
+        "sourceMap": true,
+        "removeComments": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "moduleResolution": "node",
+        "baseUrl": "./",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "paths": {},
+        "types": ["react"],
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "resolveJsonModule": true
+    },
+    "exclude": ["node_modules", "**/*.spec.ts", "junk"]
 }
