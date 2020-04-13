@@ -1,19 +1,40 @@
 import * as React from 'react';
+
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Home, Login, Admin } from './pages';
+
 import './App.scss';
-import { IPage } from './interfaces';
-import img from './assets/img/cuttree.jpg';
 
-class App extends React.Component<IPage, {}> {
-    render() {
-        const { color } = this.props;
-        return (
-            <div className="text-center mt-3">
-                <h1 className={`header text-${color} text-uppercase display-4`}>React-Typescript</h1>
-                <img src={img} className="my-5" alt="sada" />
-                <p className="mt-3 secondaryHeader">The color of this page is: {color}</p>
+export function App() {
+    return (
+        <Router>
+            <div>
+                <ul>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/admin">Admin</Link>
+                    </li>
+                    <li>
+                        <Link to="/login">Login</Link>
+                    </li>
+                </ul>
+
+                <hr />
+                <h1>Main Header!</h1>
+                <Switch>
+                    <Route path="/" exact>
+                        <Home color="secondary" />
+                    </Route>
+                    <Route path="/admin">
+                        <Admin />
+                    </Route>
+                    <Route path="/login">
+                        <Login />
+                    </Route>
+                </Switch>
             </div>
-        );
-    }
+        </Router>
+    );
 }
-
-export default App;

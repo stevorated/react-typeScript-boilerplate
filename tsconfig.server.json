@@ -2,9 +2,9 @@
     "compilerOptions": {
         "target": "es6",
         "module": "commonjs",
-        "lib": ["dom", "es2017", "es2015"],
-        "allowJs": true,
-
+        "lib": ["es2017", "es2015"],
+        // "allowJs": true,
+        // "checkJs": true, // Type checking
         "jsx": "react",
         "sourceMap": true,
         "removeComments": true,
@@ -13,14 +13,14 @@
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "moduleResolution": "node",
-        "baseUrl": "./",
+        // "baseUrl": "./",
         "outDir": "./dist",
-        // "rootDir": "./src",
-        "paths": {},
-        "types": ["react", "node"],
+        "rootDir": "./server",
+        // "paths": {},
+        "types": ["node"],
         "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
         "resolveJsonModule": true
     },
-    "exclude": ["node_modules", "**/*.spec.ts", "junk"]
+    "exclude": ["node_modules", "**/*.spec.ts", "junk", "src"]
 }
